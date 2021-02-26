@@ -18,6 +18,9 @@ Do the following:
    HINT: no function required
 */
 let votingAge = 18
+if (votingAge >= 18) {
+  console.log(true)
+}
 
 /*
 Task 1b - Values
@@ -29,8 +32,15 @@ Do the following:
 
    HINT: no function required
 */
-let func = 'arrow'
-let fun = 'JavaScript'
+let func = 18
+let fun = 21
+
+if (func <= fun) {
+  func = 'younger'
+}
+
+console.log(func)
+
 /*
 Task 1c - Convert Strings to Numbers
 
@@ -70,9 +80,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/) {
-  /*add your code here*/
+function dogYears(humanYears) {
+  return humanYears * 7
 }
+
+dogYears(6)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
