@@ -153,7 +153,29 @@ Use the game function below to do the following:
 */
 
 function game(user, computer) {
-  /*add your code here*/
+  // const scissors = 1
+  // const paper = 2
+  // const rock = 3
+
+  if (user === 'scissors' && computer === 'paper') {
+    return 'you win!'
+  } else if (user === 'scissors' && computer === 'rock') {
+    return 'you lose!'
+  } else if (user === 'scissors' && computer === 'scissors') {
+    return "it's a tie"
+  } else if (user === 'rock' && computer === 'paper') {
+    return 'you lose!'
+  } else if (user === 'rock' && computer === 'scissors') {
+    return 'you win!'
+  } else if (user === 'rock' && computer === 'rock') {
+    return "it's a tie"
+  } else if (user === 'paper' && computer === 'rock') {
+    return 'you win!'
+  } else if (user === 'paper' && computer === 'scissors') {
+    return 'you lose!'
+  } else if (user === 'paper' && computer === 'paper') {
+    return "it's a tie"
+  }
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -167,8 +189,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/) {
-  /*add your code here*/
+function miles(kilometers) {
+  let miles = 0.621371 * kilometers
+  return miles
 }
 
 //Task 5b - Feet to CM
@@ -179,8 +202,9 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/) {
-  /*add your code here*/
+function feet(cm) {
+  let feet = 0.0328084 * cm
+  return feet
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -193,8 +217,12 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/) {
-  /*add your code here*/
+function annoyingSong(number) {
+  for (let i = number; i > 0; i--) {
+    return `${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${
+      number - 1
+    } bottles of soda on the wall`
+  }
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
