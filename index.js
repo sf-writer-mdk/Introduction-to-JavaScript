@@ -153,10 +153,6 @@ Use the game function below to do the following:
 */
 
 function game(user, computer) {
-  // const scissors = 1
-  // const paper = 2
-  // const rock = 3
-
   if (user === 'scissors' && computer === 'paper') {
     return 'you win!'
   } else if (user === 'scissors' && computer === 'rock') {
@@ -177,6 +173,39 @@ function game(user, computer) {
     return "it's a tie"
   }
 }
+
+// The following code is correct according to an outside source (Quakka extension in VSC), but it says it's 'undefined' here. Even though it's printing a result in the console.
+// const randNum = Math.floor(Math.random() * 3) + 1
+
+// function game(user, computer) {
+//   let weapon = {
+//     scissors: 1,
+//     paper: 2,
+//     rock: 3,
+//   }
+
+//   if (user === 'scissors' && computer === weapon.paper) {
+//     return 'you win!'
+//   } else if (user === 'scissors' && computer === weapon.rock) {
+//     return 'you lose!'
+//   } else if (user === 'scissors' && computer === weapon.scissors) {
+//     return "it's a tie"
+//   } else if (user === 'rock' && computer === weapon.paper) {
+//     return 'you lose!'
+//   } else if (user === 'rock' && computer === weapon.scissors) {
+//     return 'you win!'
+//   } else if (user === 'rock' && computer === weapon.rock) {
+//     return "it's a tie"
+//   } else if (user === 'paper' && computer === weapon.rock) {
+//     return 'you win!'
+//   } else if (user === 'paper' && computer === weapon.scissors) {
+//     return 'you lose!'
+//   } else if (user === 'paper' && computer === weapon.paper) {
+//     return "it's a tie"
+//   }
+// }
+
+// console.log(game('rock', randNum))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -253,8 +282,6 @@ function grade(grade) {
     return 'you got an F'
   }
 }
-
-console.log(grade(83))
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
