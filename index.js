@@ -178,7 +178,7 @@ function game(user, computer) {
 // const randNum = Math.floor(Math.random() * 3) + 1
 
 // function game(user, computer) {
-//   let weapon = {
+//   const weapon = {
 //     scissors: 1,
 //     paper: 2,
 //     rock: 3,
@@ -219,8 +219,7 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers) {
-  let miles = 0.621371 * kilometers
-  return miles
+  return 0.621371 * kilometers
 }
 
 //Task 5b - Feet to CM
@@ -232,8 +231,7 @@ Using the feet function below do the following:
 */
 
 function feet(cm) {
-  let feet = 0.0328084 * cm
-  return feet
+  return cm / 30.48
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
